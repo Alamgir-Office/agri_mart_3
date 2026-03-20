@@ -1,0 +1,19 @@
+{
+  "id": "u1",
+  "name": "Priya Sharma",
+  "email": "priya@example.com",
+  "phone": "+91 9876543210",
+  "avatar": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg",
+  "loyaltyPoints": 450,
+  "addresses": [
+    {
+      "id": "a1",
+      "type": "Home",
+      "street": "Flat 402, Green Meadows",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "pincode": "400050",
+      "isDefault": true
+    }
+  ]
+}

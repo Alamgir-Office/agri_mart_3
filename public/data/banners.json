@@ -1,0 +1,18 @@
+[
+  {
+    "id": "b1",
+    "title": "Straight from the farm to your kitchen ❤️",
+    "subtitle": "Get 20% off your first order of organic produce.",
+    "image": "https://images.pexels.com/photos/264537/pexels-photo-264537.jpeg",
+    "cta": "Shop Now",
+    "link": "/shop"
+  },
+  {
+    "id": "b2",
+    "title": "Support Local Farmers",
+    "subtitle": "Discover fresh, seasonal harvests near you.",
+    "image": "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg",
+    "cta": "Explore Nearby",
+    "link": "/nearby"
+  }
+]

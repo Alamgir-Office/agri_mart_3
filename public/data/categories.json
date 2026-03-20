@@ -1,0 +1,8 @@
+[
+  { "id": "c1", "name": "Vegetables", "slug": "vegetables", "icon": "Carrot" },
+  { "id": "c2", "name": "Fruits", "slug": "fruits", "icon": "Apple" },
+  { "id": "c3", "name": "Dairy", "slug": "dairy", "icon": "Milk" },
+  { "id": "c4", "name": "Grains & Pulses", "slug": "grains", "icon": "Wheat" },
+  { "id": "c5", "name": "Spices", "slug": "spices", "icon": "Flame" },
+  { "id": "c6", "name": "Leafy Greens", "slug": "leafy", "icon": "Leaf" }
+]

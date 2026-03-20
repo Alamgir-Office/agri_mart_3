@@ -1,0 +1,14 @@
+[
+  {
+    "id": "s1",
+    "title": "Winter Greens",
+    "description": "Fresh spinach, mustard greens, and methi.",
+    "image": "https://images.pexels.com/photos/1351238/pexels-photo-1351238.jpeg"
+  },
+  {
+    "id": "s2",
+    "title": "Citrus Season",
+    "description": "Juicy oranges and sweet kinnows straight from the orchards.",
+    "image": "https://images.pexels.com/photos/2294477/pexels-photo-2294477.jpeg"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "loc1",
+    "name": "Green Valley Farms",
+    "type": "farm",
+    "lat": 18.5204,
+    "lng": 73.8567,
+    "description": "Organic vegetable farm in Pune."
+  },
+  {
+    "id": "loc2",
+    "name": "Sunrise Organics",
+    "type": "farm",
+    "lat": 19.9975,
+    "lng": 73.7898,
+    "description": "Pesticide-free onions and grapes in Nashik."
+  },
+  {
+    "id": "loc3",
+    "name": "City Greens Hydroponics",
+    "type": "farm",
+    "lat": 19.0760,
+    "lng": 72.8777,
+    "description": "Urban hydroponic farm in Mumbai."
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "f1",
+    "name": "Ramesh Kumar",
+    "farmLocation": "Pune, Maharashtra",
+    "rating": 4.8,
+    "avatar": "https://images.pexels.com/photos/2382665/pexels-photo-2382665.jpeg",
+    "crops": ["Tomatoes", "Potatoes", "Onions"],
+    "story": "Farming for 3 generations, dedicated to organic practices."
+  },
+  {
+    "id": "f2",
+    "name": "Anita Devi",
+    "farmLocation": "Nashik, Maharashtra",
+    "rating": 4.9,
+    "avatar": "https://images.pexels.com/photos/3316131/pexels-photo-3316131.jpeg",
+    "crops": ["Grapes", "Pomegranates", "Onions"],
+    "story": "Empowering women in agriculture through cooperative farming."
+  }
+]

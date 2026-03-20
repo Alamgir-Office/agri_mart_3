@@ -1,0 +1,156 @@
+[
+  {
+    "id": "p1",
+    "name": "Fresh Organic Tomatoes",
+    "category": "vegetables",
+    "price": 45,
+    "originalPrice": 60,
+    "unit": "kg",
+    "farmName": "Green Valley Farms",
+    "location": "Pune, Maharashtra",
+    "rating": 4.8,
+    "images": [
+      "https://images.pexels.com/photos/533280/pexels-photo-533280.jpeg",
+      "https://images.pexels.com/photos/1327430/pexels-photo-1327430.jpeg"
+    ],
+    "isOrganic": true,
+    "harvestDate": "2023-10-25",
+    "stock": 150,
+    "description": "Juicy, vine-ripened tomatoes grown without synthetic pesticides. Perfect for salads and curries.",
+    "specifications": {
+      "Type": "Desi Tomato",
+      "Shelf Life": "5-7 Days",
+      "Storage": "Cool, dry place or refrigerator",
+      "Packaging": "Eco-friendly paper bag"
+    },
+    "reviews": [
+      { "user": "Rahul S.", "rating": 5, "comment": "Very fresh and tasty!", "date": "2023-10-26" },
+      { "user": "Pooja M.", "rating": 4, "comment": "Good quality, but a bit small.", "date": "2023-10-27" }
+    ]
+  },
+  {
+    "id": "p2",
+    "name": "Farm Fresh Onions",
+    "category": "vegetables",
+    "price": 30,
+    "originalPrice": 40,
+    "unit": "kg",
+    "farmName": "Sunrise Organics",
+    "location": "Nashik, Maharashtra",
+    "rating": 4.5,
+    "images": [
+      "https://images.pexels.com/photos/4197444/pexels-photo-4197444.jpeg",
+      "https://images.pexels.com/photos/1442043/pexels-photo-1442043.jpeg"
+    ],
+    "isOrganic": false,
+    "harvestDate": "2023-10-20",
+    "stock": 500,
+    "description": "Crisp and pungent red onions, hand-harvested from our family farm.",
+    "specifications": {
+      "Type": "Red Onion",
+      "Shelf Life": "2-3 Weeks",
+      "Storage": "Cool, dry, and well-ventilated place",
+      "Packaging": "Mesh bag"
+    },
+    "reviews": [
+      { "user": "Amit K.", "rating": 5, "comment": "Excellent quality onions.", "date": "2023-10-22" }
+    ]
+  },
+  {
+    "id": "p3",
+    "name": "Alphonso Mangoes",
+    "category": "fruits",
+    "price": 800,
+    "originalPrice": 1000,
+    "unit": "dozen",
+    "farmName": "Ratnagiri Orchards",
+    "location": "Ratnagiri, Maharashtra",
+    "rating": 5.0,
+    "images": [
+      "https://images.pexels.com/photos/2294471/pexels-photo-2294471.jpeg",
+      "https://images.pexels.com/photos/3375263/pexels-photo-3375263.jpeg"
+    ],
+    "isOrganic": true,
+    "harvestDate": "2023-05-15",
+    "stock": 50,
+    "description": "The king of mangoes, authentic Alphonso straight from Ratnagiri.",
+    "specifications": {
+      "Type": "Alphonso (Hapus)",
+      "Shelf Life": "3-5 Days after ripening",
+      "Storage": "Room temperature until ripe",
+      "Packaging": "Cardboard box with hay"
+    },
+    "reviews": [
+      { "user": "Sneha R.", "rating": 5, "comment": "Sweetest mangoes ever!", "date": "2023-05-20" }
+    ]
+  },
+  {
+    "id": "p4",
+    "name": "Organic Basmati Rice",
+    "category": "grains",
+    "price": 120,
+    "originalPrice": 150,
+    "unit": "kg",
+    "farmName": "Himalayan Harvest",
+    "location": "Dehradun, Uttarakhand",
+    "rating": 4.9,
+    "images": ["https://images.pexels.com/photos/4110250/pexels-photo-4110250.jpeg"],
+    "isOrganic": true,
+    "harvestDate": "2023-09-10",
+    "stock": 1000,
+    "description": "Long-grain aromatic Basmati rice, aged to perfection.",
+    "specifications": {
+      "Type": "Long Grain Basmati",
+      "Shelf Life": "12 Months",
+      "Storage": "Airtight container in a dry place",
+      "Packaging": "Jute bag"
+    },
+    "reviews": []
+  },
+  {
+    "id": "p5",
+    "name": "Fresh Spinach (Palak)",
+    "category": "leafy",
+    "price": 20,
+    "originalPrice": 25,
+    "unit": "bunch",
+    "farmName": "City Greens Hydroponics",
+    "location": "Mumbai, Maharashtra",
+    "rating": 4.7,
+    "images": ["https://images.pexels.com/photos/2325843/pexels-photo-2325843.jpeg"],
+    "isOrganic": true,
+    "harvestDate": "2023-10-26",
+    "stock": 80,
+    "description": "Hydroponically grown spinach, triple-washed and ready to use.",
+    "specifications": {
+      "Type": "Hydroponic Spinach",
+      "Shelf Life": "3-4 Days",
+      "Storage": "Refrigerator crisper drawer",
+      "Packaging": "Biodegradable plastic sleeve"
+    },
+    "reviews": []
+  },
+  {
+    "id": "p6",
+    "name": "Desi Cow Ghee",
+    "category": "dairy",
+    "price": 950,
+    "originalPrice": 1100,
+    "unit": "liter",
+    "farmName": "Nandini Dairy Farm",
+    "location": "Karnal, Haryana",
+    "rating": 4.9,
+    "images": ["https://images.pexels.com/photos/4198028/pexels-photo-4198028.jpeg"],
+    "isOrganic": true,
+    "harvestDate": "2023-10-24",
+    "stock": 30,
+    "description": "Pure A2 cow ghee made using the traditional bilona method.",
+    "specifications": {
+      "Type": "A2 Cow Ghee",
+      "Shelf Life": "9 Months",
+      "Storage": "Room temperature, away from direct sunlight",
+      "Packaging": "Glass jar"
+    },
+    "reviews": []
+  }
+]
