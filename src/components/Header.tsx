@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { Heart, Search, ShoppingBasket, Menu, MapPin, Store } from 'lucide-react';
 import { useCartStore } from '../store/useCartStore';
 import { useWishlistStore } from '../store/useWishlistStore';
@@ -8,6 +9,15 @@ export default function Header() {
   const cartCount = cartItems.reduce((acc, item) => acc + item.quantity, 0);
   const wishlistItems = useWishlistStore((state) => state.items);
   const wishlistCount = wishlistItems.length;
+  const navigate = useNavigate();
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      navigate(`/shop?q=${encodeURIComponent(searchQuery.trim())}`);
+    }
+  };
 
   return (
     <header className="fixed top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-green-100 shadow-sm">
@@ -26,14 +36,18 @@ export default function Header() {
           </Link>
         </div>
 
-        <div className="hidden md:flex flex-1 max-w-xl mx-8 relative">
+        <form onSubmit={handleSearch} className="hidden md:flex flex-1 max-w-xl mx-8 relative">
           <input
             type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search for fresh vegetables, fruits, dairy..."
             className="w-full bg-[#F5EDE2]/50 border border-green-200 rounded-full py-2 pl-12 pr-4 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
           />
-          <Search className="w-5 h-5 text-green-600 absolute left-4 top-1/2 -translate-y-1/2" />
-        </div>
+          <button type="submit" className="absolute left-4 top-1/2 -translate-y-1/2">
+            <Search className="w-5 h-5 text-green-600 hover:text-green-700 transition-colors" />
+          </button>
+        </form>
 
         <div className="flex items-center gap-2 sm:gap-4">
           <Link to="/nearby" className="hidden sm:flex items-center gap-2 text-sm font-medium text-green-700 hover:bg-green-50 px-3 py-2 rounded-full transition-colors">

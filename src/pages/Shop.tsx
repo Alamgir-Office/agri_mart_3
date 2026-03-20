@@ -11,6 +11,7 @@ import toast from 'react-hot-toast';
 export default function Shop() {
   const [searchParams, setSearchParams] = useSearchParams();
   const categoryParam = searchParams.get('category');
+  const queryParam = searchParams.get('q');
   
   const { data: products, isLoading: isProdLoading } = useProducts();
   const { data: categories, isLoading: isCatLoading } = useCategories();
@@ -34,12 +35,13 @@ export default function Shop() {
     if (!products) return [];
     return products.filter((p: any) => {
       if (categoryParam && p.category !== categoryParam) return false;
+      if (queryParam && !p.name.toLowerCase().includes(queryParam.toLowerCase()) && !p.description.toLowerCase().includes(queryParam.toLowerCase())) return false;
       if (filters.organicOnly && !p.isOrganic) return false;
       if (p.price > filters.maxPrice) return false;
       if (p.rating < filters.minRating) return false;
       return true;
     });
-  }, [products, categoryParam, filters]);
+  }, [products, categoryParam, queryParam, filters]);
 
   if (isProdLoading || isCatLoading) {
     return (
@@ -169,9 +171,23 @@ export default function Shop() {
 
         {/* Product Grid */}
         <div className="flex-1">
-          <h1 className="text-2xl font-bold text-slate-800 mb-6 hidden md:block">
-            {categoryParam ? categories?.find((c:any) => c.slug === categoryParam)?.name : 'All Fresh Produce'}
-          </h1>
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
+            <h1 className="text-2xl font-bold text-slate-800 hidden md:block">
+              {queryParam ? `Search results for "${queryParam}"` : categoryParam ? categories?.find((c:any) => c.slug === categoryParam)?.name : 'All Fresh Produce'}
+            </h1>
+            {queryParam && (
+              <button 
+                onClick={() => {
+                  const newParams = new URLSearchParams(searchParams);
+                  newParams.delete('q');
+                  setSearchParams(newParams);
+                }}
+                className="text-sm bg-slate-100 text-slate-600 px-3 py-1.5 rounded-full hover:bg-slate-200 transition-colors flex items-center gap-1"
+              >
+                Clear Search <X className="w-3 h-3" />
+              </button>
+            )}
+          </div>
 
           {filteredProducts.length === 0 ? (
             <div className="text-center py-20 bg-white rounded-2xl border border-slate-100">
